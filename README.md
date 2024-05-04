@@ -5,3 +5,5 @@ These notebooks try to understand the factors that exacerbate wildfires (sizes).
 The `eda.ipynb` notebook goes over the data and visualizes it to provide a better understanding of how the features relate to determining the size and severity of the wildfire. 
 
 The `models.ipynb` file creates a data processing pipeline using scikit-learn where it one-hot encodes various categorical columns, normalizes numerical values, and performs feature engineering to better extract information from the features. At the end, it uses **Random Forest**, **XGBoost**, **Decision Trees** (Balanced or balanced with bagging), **Support Vector Machines**, **K-Nearest Neighbors**. GridsearchCV is also used to perform cross validation, determining the best hyperparameters to use for each model.
+
+The best of the models (XGBoost) was able to achieve a testing accuracy of 92% with an F1 score of 0.71.
